@@ -6,41 +6,40 @@
     android:gravity="right"
     android:orientation="horizontal">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="right"
         android:orientation="vertical">
 
-
         <TextView
-            android:id="@+id/txtName"
+            android:id="@+id/txtMyName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@+id/civ"
+            android:layout_toRightOf="@+id/profileImage"
             android:text="이름"
             android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/txtMessage"
+            android:id="@+id/txtMyMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtName"
-            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtMyName"
+            android:layout_alignLeft="@+id/txtMyName"
             android:maxWidth="250dp"
             android:padding="12dp"
             android:text="메시지"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:background="@drawable/chat" />
 
         <TextView
-            android:id="@+id/txtTime"
+            android:id="@+id/txtMyTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/txtMessage"
+            android:layout_alignBottom="@+id/txtMyMessage"
             android:layout_marginLeft="8dp"
-            android:layout_toRightOf="@+id/txtMessage"
+            android:layout_toRightOf="@+id/txtMyMessage"
             android:text="시간"
             android:textSize="12sp" />
 
@@ -50,9 +49,9 @@
         android:id="@+id/profileImage"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/chat"
+        android:foreground="@drawable/account_circle_24dp_fill0_wght400_grad0_opsz24"
+        android:src="@drawable/ic_launcher_foreground"
         app:civ_border_color="#9E9D9D"
         app:civ_border_width="2dp" />
-
 
 </LinearLayout>
